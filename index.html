@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amani Mwangi | Wildlife Photographer — Kenya</title>
+    <meta name="description" content="Immersive wildlife photography from Kenya's wild heart. Explore the works of Amani Mwangi, captured in the Maasai Mara, Amboseli, and beyond.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="logo-reveal">AMANI MWANGI</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="nav-logo">AM.</a>
+        <div class="nav-links">
+            <a href="#portfolio">Work</a>
+            <a href="#about">About</a>
+            <a href="#featured">Series</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="menu-btn"><i data-feather="menu"></i></button>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="visible">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p>Wildlife — Kenya — East Africa</p>
+            <h1>Amani Mwangi</h1>
+            <div class="scroll-indicator">
+                <i data-feather="chevron-down" size="32"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?q=80&w=800" alt="Amani Mwangi Portrait">
+                </div>
+                <div class="about-text">
+                    <span class="label">The Photographer</span>
+                    <h2>Chasing the Golden Hour in the Maasai Mara.</h2>
+                    <p class="bio">
+                        Amani Mwangi is a Kenyan wildlife photographer dedicated to capturing the raw, cinematic beauty of the East African wilderness. His work focuses on the intimate moments of the Big Five and the sweeping landscapes of the Rift Valley.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i data-feather="map-pin" size="14"></i>
+                            Location: <span>Nairobi, Kenya</span>
+                        </div>
+                        <div class="detail-item">
+                            <i data-feather="camera" size="14"></i>
+                            Focus: <span>Big Five, Avifauna, Conservation</span>
+                        </div>
+                        <div class="detail-item">
+                            <i data-feather="mail" size="14"></i>
+                            Status: <span>Available for Expeditions & Editorial</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <span class="label">Portfolio</span>
+            <div class="filter-bar">
+                <div class="filter-pill active" data-filter="all">Selected Work</div>
+                <div class="filter-pill" data-filter="bigfive">Big Five</div>
+                <div class="filter-pill" data-filter="birds">Birds</div>
+                <div class="filter-pill" data-filter="landscape">Landscapes</div>
+                <div class="filter-pill" data-filter="conservation">Conservation</div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Lions -->
+                <div class="portfolio-item item-lg" data-category="bigfive">
+                    <img src="https://images.unsplash.com/photo-1614027164847-1b2809eb189d?q=80&w=1200" alt="Lion in Mara">
+                    <div class="portfolio-overlay"><span>Maasai Mara</span></div>
+                </div>
+                <!-- Bird -->
+                <div class="portfolio-item item-sm" data-category="birds">
+                    <img src="https://images.unsplash.com/photo-1544216717-3bbf52512659?q=80&w=600" alt="Kingfisher">
+                    <div class="portfolio-overlay"><span>Lake Naivasha</span></div>
+                </div>
+                <!-- Elephant -->
+                <div class="portfolio-item item-md" data-category="bigfive">
+                    <img src="https://images.unsplash.com/photo-1557050543-4d5ca4ee5084?q=80&w=800" alt="Elephant Amboseli">
+                    <div class="portfolio-overlay"><span>Amboseli</span></div>
+                </div>
+                <!-- Landscape -->
+                <div class="portfolio-item item-vert" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=800" alt="Tsavo Sunrise">
+                    <div class="portfolio-overlay"><span>Tsavo East</span></div>
+                </div>
+                 <!-- Leopard -->
+                 <div class="portfolio-item item-sm" data-category="bigfive">
+                    <img src="https://images.unsplash.com/photo-1575515645850-3bf94816c051?q=80&w=600" alt="Leopard Samburu">
+                    <div class="portfolio-overlay"><span>Samburu</span></div>
+                </div>
+                <!-- Rhino -->
+                <div class="portfolio-item item-wide" data-category="conservation">
+                    <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?q=80&w=1200" alt="Rhino Conservation">
+                    <div class="portfolio-overlay"><span>Ol Pejeta</span></div>
+                </div>
+                <!-- Zebra -->
+                <div class="portfolio-item item-sm" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1511227034394-0105079a407e?q=80&w=600" alt="Zebra Plains">
+                    <div class="portfolio-overlay"><span>Mara Plains</span></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Featured Series -->
+    <section id="featured">
+        <div class="container">
+            <div class="featured-image">
+                <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e13?q=80&w=1600" alt="The Great Migration">
+            </div>
+            <div class="featured-content">
+                <span class="label">Featured Series</span>
+                <h2>The Great Migration</h2>
+                <p>A visceral journey through the Maasai Mara during the crossing. Capturing the tension, the dust, and the eternal cycle of life and death on the Mara River.</p>
+                <a href="#" class="btn-link">View Full Series →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <span class="label">Contact</span>
+            <h2>Let's Work Together</h2>
+            <p class="subtext">Available for international editorial assignments, conservation campaigns, and private safari workshops.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group full-width">
+                    <select>
+                        <option value="">Project Type</option>
+                        <option value="editorial">Editorial / Publication</option>
+                        <option value="expedition">Guided Expedition</option>
+                        <option value="conservation">Conservation Project</option>
+                        <option value="print">Fine Art Prints</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">X / Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">500px</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">AMANI MWANGI © 2025</div>
+        <div class="footer-center">Based in Nairobi, Kenya</div>
+        <div class="footer-right">
+            Designed for the Wild.
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <div class="lightbox-close"><i data-feather="x" size="40"></i></div>
+        <div class="lightbox-content">
+            <div class="lightbox-nav">
+                <i data-feather="chevron-left" id="prev-btn"></i>
+                <i data-feather="chevron-right" id="next-btn"></i>
+            </div>
+            <img src="" alt="" class="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
